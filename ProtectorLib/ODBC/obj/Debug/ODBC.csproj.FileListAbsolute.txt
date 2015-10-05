@@ -1,0 +1,18 @@
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\Entities.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\Entities.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.pdb
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.dll
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.pdb
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.dll
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\Entities.dll
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.pdb
+F:\Proyecto\Protector\ProtectorLib\ODBC\bin\Debug\Entities.pdb
+F:\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.csprojResolveAssemblyReference.cache
+F:\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.dll
+F:\Proyecto\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.pdb

@@ -1,0 +1,22 @@
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.pdb
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.dll
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.pdb
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.dll
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.dll
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.dll
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.pdb
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.pdb
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.pdb
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.dll
+F:\Proyecto\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.pdb

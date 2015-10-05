@@ -1,0 +1,9 @@
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\Entities\bin\Debug\Entities.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\Entities\bin\Debug\Entities.pdb
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\Entities\obj\Debug\Entities.dll
+C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\Entities\obj\Debug\Entities.pdb
+F:\Proyecto\Protector\ProtectorLib\Entities\bin\Debug\Entities.dll
+F:\Proyecto\Protector\ProtectorLib\Entities\bin\Debug\Entities.pdb
+F:\Proyecto\Protector\ProtectorLib\Entities\obj\Debug\Entities.dll
+F:\Proyecto\Protector\ProtectorLib\Entities\obj\Debug\Entities.pdb
