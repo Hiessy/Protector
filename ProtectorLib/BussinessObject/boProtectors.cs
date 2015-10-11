@@ -60,7 +60,8 @@ namespace BusinessObject
         }
 
         public void Insertar(ProtectorEntity entidad)
-        {protector.Insertar(entidad);
+        {
+            protector.Insertar(entidad);
             /*   try
             {
 

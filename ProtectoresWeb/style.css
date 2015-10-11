@@ -2,23 +2,23 @@
 .inner_copy {border:0;color:#f00;float:left;width:50% !important;margin:-100% 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:11px}
 .fleft {float:left}
 .fright  {float:right}
-.fcenter {float:none;margin:0 auto;width:96%}
+.fcenter {float:none;margin:0 auto;width:100%}
 .fclear {clear:both}
 body {font-family:Arial,Helvetica,sans-serif;font-size:12px;background:#ccc}
 #container {width:800px;margin:auto;background:#fff;height: 722px;}
 
-#layoutHeader {width:799px;
-height:217px;
-background:url('/ProtectoresWeb/images/headerBackground.jpg')no-repeat;margin-top: 0px;
+#layoutHeader {width:800px;height:217px;background:url('/ProtectoresWeb/images/headerBackground.jpg')no-repeat;margin-top: 0px;
+margin-left: 4px;
 }
 #layoutHeader h1 {color:#fff;font-size:36px;font-weight:bold;padding:20px 20px 0 20px}
 #layoutHeader h2 {color:#DCE999;font-size:14px;font-weight:bold;padding:0 20px 0 20px}
 #layoutHeader h1 a {color:#fff;font-size:36px;font-weight:bold;text-decoration:none}
 #layoutHeader h2 a {color:#DCE999;font-size:14px;font-weight:bold;text-decoration:none}
 
+
 #layoutCenterBody {margin:10px 27px 20px 5px;height: 375px;width: 778px;}
 
-#layoutNavigation {border:1px solid #975450;width:195px;float:left;background:#D39697;margin-left: 0;margin-right: 25px;}
+#layoutNavigation {border:1px solid #975450;width:195px;float:left;background:#D39697;margin-left: 0px;margin-right: 25px;}
 #layoutNavigation .navTitle {background:#975450;height:30px}
 #layoutNavigation .navTitle h3 {color:#fff;font-size:12px;font-weight:bold;padding:6px 10px}
 
@@ -29,12 +29,13 @@ background:url('/ProtectoresWeb/images/headerBackground.jpg')no-repeat;margin-to
 #layoutBodyContent p {margin-top:10px}
 .clearer {clear:both;height:10px}
 
-#footer {height:56px;background:url(images/menuBackground.gif) repeat-x;text-align:center;margin-top: 71px;}
-#footer p {padding-top:10px;color:#fff}
-#footer a {color:#fff;text-decoration:underline}
-#footer a:hover {color:#000;text-decoration:none;background:#FDDBDC}
 
-#layoutMenu {height:89px;background:url(images/menuBackground.gif) repeat-x;font-weight:bold;width: 800px;}
+
+#layoutMenu {height:55px;
+width: 808px;
+background:url(images/menuBackground.gif) repeat-x;font-weight:bold;
+}
+#Header {height:56px;width: 807px;}
 #layoutMenu ul {text-align:center;padding-top:17px}
 #layoutMenu li {list-style:none;display:inline}
 #layoutMenu li a {padding:3px 20px 3px 8px;text-decoration:none;background:url(images/mainMenuList.gif) no-repeat left 5px;font-size:12px}
@@ -46,3 +47,9 @@ background:url('/ProtectoresWeb/images/headerBackground.jpg')no-repeat;margin-to
 #layoutNavigation a {display:block;width:180px;background-color:#D39697;border-bottom:1px dotted #5D5262;margin:7px 10px}
 #layoutNavigation a:link, #layoutNavigation a:visited {color:#fff;text-decoration:none;height: 17px;}
 #layoutNavigation a:hover {background-color:#FDDBDC;color:#000}
+
+
+#footer {height:56px;background:url(images/menuBackground.gif) repeat-x;text-align:center;margin-top: 71px;}
+#footer p {padding-top:10px;color:#fff}
+#footer a {color:#fff;text-decoration:underline}
+#footer a:hover {color:#000;text-decoration:none;background:#FDDBDC}

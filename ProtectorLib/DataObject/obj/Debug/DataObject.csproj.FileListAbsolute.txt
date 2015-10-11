@@ -1,9 +1,0 @@
-C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.dll
-C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.pdb
-C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\DataObject\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.dll
-C:\Documents and Settings\PC1\Escritorio\Proyecto\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.pdb
-F:\Proyecto\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.dll
-F:\Proyecto\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.pdb
-F:\Proyecto\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.dll
-F:\Proyecto\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.pdb

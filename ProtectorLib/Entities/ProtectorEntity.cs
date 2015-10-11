@@ -3,38 +3,42 @@
 namespace Entities
 {
     public class ProtectorEntity
-    {        
+    {
+        private string correo;
         private string nombre;
         private string apellido;
+        private string organizacion;
         private string contrase;
-        private string tipo;
         private string direccion;
         private string telefono;
-        private string organizacion;
-        private string correo;
+        //private string tipo;
+        
+       
+        
 
         public ProtectorEntity()
         {
-
+            correo = "";
             nombre = "";
             apellido = "";
-            contrase = "";
-            tipo = "";
             organizacion = "";
+            contrase = "";
             direccion = "";
             telefono = "";
-            correo = "";
+            //tipo = "";
+           
+           
         }
-        public string Organizacion
+        public string Correo
         {
             get
             {
-                return organizacion;
+                return correo;
             }
 
             set
             {
-                organizacion = value.Trim();
+                correo = (value.Trim() != "" ? value.Trim() : null);
             }
         }
 
@@ -63,7 +67,18 @@ namespace Entities
                 apellido = value;
             }
         }
+        public string Organizacion
+        {
+            get
+            {
+                return organizacion;
+            }
 
+            set
+            {
+                organizacion = value.Trim();
+            }
+        }
         public string Contrase
         {
             get
@@ -76,20 +91,6 @@ namespace Entities
                 contrase = value;
             }
         }
-
-        public string Tipo
-        {
-            get
-            {
-                return tipo;
-            }
-
-            set
-            {
-                tipo = value;
-            }
-        }
-
         public string Direccion
         {
             get
@@ -115,19 +116,19 @@ namespace Entities
                 telefono = value;
             }
         }
-        
-        public string Correo
+        /*
+        public string Tipo
         {
             get
             {
-                return correo;
+                return tipo;
             }
 
             set
             {
-                correo = (value.Trim() != "" ? value.Trim() : null);
+                tipo = value;
             }
-        }
-
+        }        
+       */ 
     }
 }

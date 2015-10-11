@@ -12,9 +12,10 @@ namespace ODBC
     {
 
         //TODO realizar las consultas SQL
-        //	private const string SQLSearchByPrimaryKey = "SELECT * FROM Empleado WHERE EmpleadoLegajo = ?";
-        //	private const string SQLSearch = "SELECT * FROM Empleado WHERE EmpleadoLegajo LIKE ? AND EmpleadoApellido LIKE ? AND EmpleadoNombre LIKE ?";
-        private const string SQLInsert = "INSERT INTO Protectores (Nombre, Apellido, Contrase, Tipo, Org, Direccion, Telefono, Correo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        //private const string SQLSearchByPrimaryKey = 
+        private const string SQLSearch = "SELECT * FROM Protectores WHERE CORREO LIKE ? AND CLAVE LIKE ?";
+        private const string SQLInsert = "INSERT INTO PROTECTORES (CORREO, NOMBRE, APELLIDO, ORGANIZACION, CLAVE, DIRECCION, TELEFONO) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        //"INSERT INTO TIPOS (CORREO, TIPO) VALUES (?,?)";
         //	private const string SQLUpdate = "UPDATE Empleado SET EmpleadoApellido = ?, EmpleadoNombre = ?, EmpleadoTelefono = ?, EmpleadoEmail = ?, EmpleadoFechaNacimiento = ?, EmpleadoSueldo = ? WHERE EmpleadoLegajo = ?";
         //	private const string SQLDelete = "DELETE FROM Empleado WHERE EmpleadoLegajo = ?";
 
@@ -28,14 +29,16 @@ namespace ODBC
         {
             ProtectorEntity entidad = new ProtectorEntity();
 
-            entidad.Nombre = dr["Nombre"].ToString();
-            entidad.Apellido = dr["Apellido"].ToString();
-            entidad.Contrase = dr["Contrase"].ToString();
-            entidad.Tipo = dr["Tipo"].ToString();
-            entidad.Organizacion = dr["Org"].ToString();
-            entidad.Direccion = dr["Direccion"].ToString();
-            entidad.Telefono = dr["Telefono"].ToString();
-            entidad.Correo = dr["Correo"].ToString();
+            entidad.Correo = dr["CORREO"].ToString();
+            entidad.Nombre = dr["NOMBRE"].ToString();
+            entidad.Apellido = dr["APELLIDO"].ToString();
+            entidad.Organizacion = dr["ORGANIZACION"].ToString();
+            entidad.Contrase = dr["CLAVE"].ToString();
+            entidad.Direccion = dr["DIRECCION"].ToString();
+            entidad.Telefono = dr["TELEFONO"].ToString();
+            //entidad.Tipo = dr["TIPO"].ToString();
+            
+            
 
             return entidad;
         }
@@ -43,21 +46,20 @@ namespace ODBC
         private void CrearParametros(OdbcCommand command, ProtectorEntity entidad)
         {
             OdbcParameter parameter = null;
-
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
-            parameter.Value = entidad.Apellido;
+            parameter.Value = entidad.Correo;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Nombre;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
-            parameter.Value = entidad.Contrase;
-
-            parameter = command.Parameters.Add("?", OdbcType.VarChar);
-            parameter.Value = entidad.Tipo;
+            parameter.Value = entidad.Apellido;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Organizacion;
+
+            parameter = command.Parameters.Add("?", OdbcType.VarChar);
+            parameter.Value = entidad.Contrase;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Direccion;
@@ -65,6 +67,10 @@ namespace ODBC
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Telefono;
 
+            /*parameter = command.Parameters.Add("?", OdbcType.VarChar);
+            parameter.Value = entidad.Tipo;  */          
+            
+            
 
             /*	Validacion de campos no necesario en la entidad
              * if (entidad.TieneCorreoE())
@@ -73,11 +79,13 @@ namespace ODBC
                     parameter.Value = System.DBNull.Value;*/
         }
 
-
+        
         private void EjecutarComando(daComun.TipoComandoEnum sqlCommandType, ProtectorEntity entidad)
         {
             //asignando protectorID manual para prueba
-            
+            //entidad.Correo = "";
+
+
             // Conexión a la base de datos.
             OdbcConnection connection = null;
             // Comando a ejecutar en la base de datos.
@@ -88,8 +96,9 @@ namespace ODBC
                 // Se obtiene una conexión abierta.
                 connection = (OdbcConnection)connectionDA.GetOpenedConnection();
 
-                IDataParameter paramProtectorId = new OdbcParameter("?", OdbcType.VarChar);
-                paramProtectorId.Value = entidad.Correo;
+                // Se crea el parámetro Legajo y se le asigna el valor.
+                //IDataParameter paramProtectorId = new OdbcParameter("?", OdbcType.VarChar);
+                //paramProtectorId.Value = entidad.Correo;
 
                 // Dependiendo de la acción que se quiera realizar:
                 switch (sqlCommandType)
@@ -99,7 +108,7 @@ namespace ODBC
                         // se le agrega el parámetro legajo y luego el resto de
                         // los parámetros.
                         command = new OdbcCommand(SQLInsert, connection);
-                        command.Parameters.Add(paramProtectorId);
+                        //command.Parameters.Add(paramProtectorId);
                         CrearParametros(command, entidad);
                         break;
 
@@ -153,6 +162,7 @@ namespace ODBC
                 }
             }
         }
+
 
         //TODO Busqueda de resultados
         public ProtectorEntity BuscarPorClavePrimaria(string legajo)

@@ -27,16 +27,12 @@
    
         <asp:Label ID="LabelTipo" runat="server" Text="Tipo de Animal: "></asp:Label>
         <asp:DropDownList ID="TextTipo" runat="server" Height="16px" Width="199px" 
-             BackColor="Silver" DataSourceID="SqlDataSourceTIPOS" >
+             BackColor="Silver" >
             <asp:ListItem>..</asp:ListItem>
             <asp:ListItem>Perro</asp:ListItem>
             <asp:ListItem>Gato</asp:ListItem>
             <asp:ListItem>Otro</asp:ListItem>
         </asp:DropDownList>
-        
-        <asp:SqlDataSource ID="SqlDataSourceTIPOS" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:ProtectoresConnectionString %>" 
-            SelectCommand="SELECT [TIPO] FROM [TIPOS]"></asp:SqlDataSource>
         
         <!--Para la seleccion de otro debe agregar un campo para escribir-->
         
@@ -61,6 +57,8 @@
 </form>
      
         <asp:Button ID="BtnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" style="margin-left: 200px" Width="78px"/>
+     
+       <asp:Label ID="LblEstado" runat="server"></asp:Label>
      
 </div>
 </asp:Content>

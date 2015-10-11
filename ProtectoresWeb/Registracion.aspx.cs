@@ -15,14 +15,16 @@ public partial class Registracion : System.Web.UI.Page
     {
 
         ProtectorEntity entidad = (ProtectorEntity)Context.Items["Protector"];
+        TextCorreo.Text = entidad.Correo;
         TextNombre.Text = entidad.Nombre;
         TextApellido.Text = entidad.Apellido;
-        TextBoxContrase.Text = entidad.Contrase;
-        TextTipo.Text = entidad.Tipo;
-        TextDireccion.Text = entidad.Direccion;
         TextOrg.Text = entidad.Organizacion;
+        TextBoxContrase.Text = entidad.Contrase;
+        TextDireccion.Text = entidad.Direccion;
         TextTelefono.Text = entidad.Telefono;
-        TextCorreo.Text = entidad.Correo;
+        //TextTipo.Text = entidad.Tipo;
+        
+        
 
     }
 
@@ -37,26 +39,32 @@ public partial class Registracion : System.Web.UI.Page
     protected void btnAceptar_Click(object sender, System.EventArgs e)
     {
 
-        // Se crea un objeto empleado entidad y se le asignan los
+        // Se crea un objeto protector entidad y se le asignan los
         // datos ingresados por el usuario.
         ProtectorEntity entidad = new ProtectorEntity();
+        
+        entidad.Correo = TextCorreo.Text;
         entidad.Nombre = TextNombre.Text;
         entidad.Apellido = TextApellido.Text;
-        entidad.Contrase = TextBoxContrase.Text;
-        entidad.Tipo = TextTipo.Text;
-        entidad.Direccion = TextDireccion.Text;
         entidad.Organizacion = TextOrg.Text;
+        entidad.Contrase = TextBoxContrase.Text;
+        entidad.Direccion = TextDireccion.Text;
         entidad.Telefono = TextTelefono.Text;
-        entidad.Correo = TextCorreo.Text;
+        //entidad.Tipo = TextTipo.Text;
+        
+        LblEstado.Text = "Ingreso correcto";
 
         if (Convert.ToBoolean(ViewState["Nuevo"]))
         {
             protector.Insertar(entidad);
         }
         // Server.Transfer("EmpleadoOk.aspx");
-    }
-    protected void TextTipo_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
+        TextCorreo.Text="";
+        TextNombre.Text = "";
+        TextApellido.Text ="";
+        TextOrg.Text="";
+        TextBoxContrase.Text="";
+        TextDireccion.Text="";
+        TextTelefono.Text = "";
     }
 }

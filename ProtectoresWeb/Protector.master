@@ -1,82 +1,52 @@
-﻿<<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Protector.master.cs" Inherits="Protector" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Protector.master.cs" Inherits="Protector" %>
 
 <!DOCTYPE html>
 
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" /><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1" runat="server"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Protectores Web</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Protectores Web</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .Cabecera {margin-left: 12px;
-            margin-bottom: 0px;
-        }</style>
 </head>
-
 <body>
     <form id="form1" runat="server">
-    <div id="container">
-    <div id="layoutMenu">
-	<asp:ContentPlaceHolder id="Cabecera" runat="server">
-            <asp:Table runat="server" ID="tblCabecera" CssClass="Cabecera" Width="450px" Height="55px">
-            <asp:TableRow>
-            <asp:TableCell CssClass="RegistroProtectores">
-            <asp:Label runat="server" ID="lblRegistroProtectores" Text="Protectores Web" CssClass="RegistroProtectores"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-            <asp:Table runat="server" ID="tblLogin">
-            <asp:TableRow>
-            <asp:TableCell>
-            <asp:Label runat="server" ID="lblEmail" Text="Correo Electrónico" CssClass="EtiquetaCabecera"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-            <asp:Label runat="server" ID="lblPassword" Text="Contraseña" CssClass="EtiquetaCabecera"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-            </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow>
-            <asp:TableCell>
-            <asp:TextBox ID="txtEmail" runat="server" Columns="20" MaxLength="100" CssClass="CajaTextoCabecera" />
-            </asp:TableCell>
-            <asp:TableCell>
-            <asp:TextBox ID="txtPassword" runat="server" Columns="20" TextMode="Password" MaxLength="10" CssClass="CajaTextoCabecera" />
-            </asp:TableCell>
-            <asp:TableCell>
-            <asp:Button ID="btnEntrar" runat="server" Text="Entrar" OnClick="btnEntrar_Click" CssClass="BotonCabecera" />
-            </asp:TableCell>
-            </asp:TableRow>
-            </asp:Table>
-            </asp:TableCell>
-            </asp:TableRow>
-            </asp:Table>
-       
-         </asp:ContentPlaceHolder>
-        <div id="layoutHeader">
-		<h1><a href=""></a>Protector ETC</h1>
-		<h2>design by </h2>
-	        </div>
-		<div id="layoutCenterBody"><div class="inner_copy"></div>
+    <div><div id="container">
+	<div id="layoutMenu">
 		
-        <div id="layoutNavigation">
+	</div>
+<div id="layoutHeader">
+		<h1><a href=""></a>Protectores Web</h1>
+		<h2>design by </h2>
+	</div>
+	<div id="layoutCenterBody"><div class="inner_copy"></div>
+		<div id="layoutNavigation">
 			<div class="navTitle"><h3>Menu</h3></div>
 			<ul>
 				<li><a href="#">BEES</a></li>
 				<li><a href="#">BEE SUPPLIES</a></li>
 				<li><a href="#">BURTS BEE, ETC</a></li>
 				<li><a href="#">SPELLING BEES</a></li>
-			</ul> 
+				<li><a href="#">BEE NEWSPAPERS</a></li>
+				<li><a href="#">MORE BEE STUFF</a></li>
+				<li><a href="#">BEES</a></li>
+				<li><a href="#">BEE SUPPLIES</a></li>
+			</ul>
 		</div>
-           
-               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
-
-               </asp:ContentPlaceHolder>
-
-             </div>
-          </div> 
-     
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
     </div>
-       
+    <div id="footer">
+	    <div class="fcenter" style="margin-bottom:auto">
+		    <div class="fleft"><p>Copyright</p></div><div class="fright"><p>Protectores</p></div><div class="fclear"></div>
+		    <div class="fleft"><p>Design by <a >Templates</a></p></div><div class="fright"><p>Best <a >Website Templates</a> From TemplateMonster</p></div><div class="fclear"></div>
+	    </div>
+    </div>  
 </form>
+  
 </body>
      
 </html>

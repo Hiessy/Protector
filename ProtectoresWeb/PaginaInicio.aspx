@@ -13,6 +13,12 @@
     
     <div>
     <br />
+    <asp:LinkButton ID="LnkLogin" runat="server"  Text="Login" Width="108px" PostBackUrl="~/Login.aspx" />
+    <br />
+    <br /></div>
+    
+    <div>
+    <br />
     <asp:Button ID="BtnBuscar" runat="server" OnClick="BtnBuscar_Click" Text="Buscar" Width="108px" />
         <br />
     <br />

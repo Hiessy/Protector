@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObject", "ProtectorLib\BussinessObject\BusinessObject.csproj", "{C11622CB-EDF9-42C1-9AA1-6B8B57F3E0EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataObject", "ProtectorLib\DataObject\DataObject.csproj", "{7803474B-4633-4C47-B352-BBC59B24959A}"
