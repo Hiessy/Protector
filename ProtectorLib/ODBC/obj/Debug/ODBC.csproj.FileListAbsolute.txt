@@ -1,0 +1,9 @@
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.dll
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\ODBC.pdb
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.dll
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\Entities.dll
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\DataObject.pdb
+C:\projects\Protector\ProtectorLib\ODBC\bin\Debug\Entities.pdb
+C:\projects\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.csprojResolveAssemblyReference.cache
+C:\projects\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.dll
+C:\projects\Protector\ProtectorLib\ODBC\obj\Debug\ODBC.pdb

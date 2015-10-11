@@ -31,6 +31,14 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProtectoresWeb", "Protector
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilitiesGooglesApis", "ProtectorLib\UtilitiesGooglesApis\UtilitiesGooglesApis.csproj", "{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7803474B-4633-4C47-B352-BBC59B24959A} = {7803474B-4633-4C47-B352-BBC59B24959A}
+		{4207B985-FAF1-40C2-B93F-DE9BEB99D313} = {4207B985-FAF1-40C2-B93F-DE9BEB99D313}
+		{C11622CB-EDF9-42C1-9AA1-6B8B57F3E0EB} = {C11622CB-EDF9-42C1-9AA1-6B8B57F3E0EB}
+		{880C0EE5-9795-4BE3-8C6C-4D92ED0D549A} = {880C0EE5-9795-4BE3-8C6C-4D92ED0D549A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +65,10 @@ Global
 		{880C0EE5-9795-4BE3-8C6C-4D92ED0D549A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880C0EE5-9795-4BE3-8C6C-4D92ED0D549A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{880C0EE5-9795-4BE3-8C6C-4D92ED0D549A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

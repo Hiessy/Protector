@@ -14,7 +14,6 @@ namespace ODBC
         {
             OdbcConnection connection = new OdbcConnection(ConfigurationManager.AppSettings["Conexion"]);
             connection.Open();
-
             return connection;
         }
     }

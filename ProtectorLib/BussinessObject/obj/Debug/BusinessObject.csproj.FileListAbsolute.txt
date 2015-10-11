@@ -1,0 +1,11 @@
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.dll
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\BussinessObject.pdb
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.dll
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.dll
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.dll
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\DataObject.pdb
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\Entities.pdb
+C:\projects\Protector\ProtectorLib\BussinessObject\bin\Debug\ODBC.pdb
+C:\projects\Protector\ProtectorLib\BussinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+C:\projects\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.dll
+C:\projects\Protector\ProtectorLib\BussinessObject\obj\Debug\BussinessObject.pdb

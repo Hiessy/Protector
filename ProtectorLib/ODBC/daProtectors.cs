@@ -14,7 +14,7 @@ namespace ODBC
         //TODO realizar las consultas SQL
         //private const string SQLSearchByPrimaryKey = 
         private const string SQLSearch = "SELECT * FROM Protectores WHERE CORREO LIKE ? AND CLAVE LIKE ?";
-        private const string SQLInsert = "INSERT INTO PROTECTORES (CORREO, NOMBRE, APELLIDO, ORGANIZACION, CLAVE, DIRECCION, TELEFONO) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        private const string SQLInsert = "INSERT INTO USUARIO (CORREO, NOMBRE, APELLIDO, ORGANIZACION, CLAVE, DIRECCION, TELEFONO) VALUES (?, ?, ?, ?, ?, ?, ?)";
         //"INSERT INTO TIPOS (CORREO, TIPO) VALUES (?,?)";
         //	private const string SQLUpdate = "UPDATE Empleado SET EmpleadoApellido = ?, EmpleadoNombre = ?, EmpleadoTelefono = ?, EmpleadoEmail = ?, EmpleadoFechaNacimiento = ?, EmpleadoSueldo = ? WHERE EmpleadoLegajo = ?";
         //	private const string SQLDelete = "DELETE FROM Empleado WHERE EmpleadoLegajo = ?";
@@ -33,13 +33,11 @@ namespace ODBC
             entidad.Nombre = dr["NOMBRE"].ToString();
             entidad.Apellido = dr["APELLIDO"].ToString();
             entidad.Organizacion = dr["ORGANIZACION"].ToString();
-            entidad.Contrase = dr["CLAVE"].ToString();
+            entidad.Clave = dr["CLAVE"].ToString();
             entidad.Direccion = dr["DIRECCION"].ToString();
             entidad.Telefono = dr["TELEFONO"].ToString();
-            //entidad.Tipo = dr["TIPO"].ToString();
+            entidad.Tipo = dr["TIPO"].ToString();      
             
-            
-
             return entidad;
         }
 
@@ -59,7 +57,7 @@ namespace ODBC
             parameter.Value = entidad.Organizacion;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
-            parameter.Value = entidad.Contrase;
+            parameter.Value = entidad.Clave;
 
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Direccion;
@@ -67,10 +65,9 @@ namespace ODBC
             parameter = command.Parameters.Add("?", OdbcType.VarChar);
             parameter.Value = entidad.Telefono;
 
-            /*parameter = command.Parameters.Add("?", OdbcType.VarChar);
-            parameter.Value = entidad.Tipo;  */          
-            
-            
+            parameter = command.Parameters.Add("?", OdbcType.VarChar);
+            parameter.Value = entidad.Tipo;           
+                     
 
             /*	Validacion de campos no necesario en la entidad
              * if (entidad.TieneCorreoE())

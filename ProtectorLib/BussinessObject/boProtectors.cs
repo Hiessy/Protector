@@ -20,14 +20,14 @@ namespace BusinessObject
 
         private void Validar(ProtectorEntity entidad)
         {
-            // TODO agregar validacion
-            /* if (entidad.Organizacion == "" ||
+
+            if (entidad.Organizacion == "" ||
                  entidad.Nombre == "" ||
                  entidad.Apellido == "" ||
                  entidad.Telefono == "")
              {
                  throw new DatosObligatoriosException();
-             }*/
+             }
         }
 
         public List<ProtectorEntity> Buscar(string organizacion, string nombre, string apellido)
@@ -40,6 +40,7 @@ namespace BusinessObject
             {
                 throw new boException(ex);
             }
+
         }
 
 
@@ -61,6 +62,7 @@ namespace BusinessObject
 
         public void Insertar(ProtectorEntity entidad)
         {
+            Validar(entidad);
             protector.Insertar(entidad);
             /*   try
             {
