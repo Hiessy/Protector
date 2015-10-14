@@ -1,0 +1,4 @@
+C:\projects\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.dll
+C:\projects\Protector\ProtectorLib\DataObject\bin\Debug\DataObject.pdb
+C:\projects\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.dll
+C:\projects\Protector\ProtectorLib\DataObject\obj\Debug\DataObject.pdb

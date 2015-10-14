@@ -5,59 +5,58 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-   <div>
+   <div id="registration_form">
 <form method="post" action ="Registracion.aspx" >
-    
+    <div id="registration_fields">
         <br /> <br />
-        <asp:Label ID="LabelNombre" runat="server" Text="Nombre: "></asp:Label>
-        <asp:TextBox ID="TextNombre" runat="server" style="margin-left: 14px" Width="225px"></asp:TextBox>
+        <asp:Label ID="LabelNombre" class="textname" runat="server" Text="Nombre: "></asp:Label>
+        <asp:TextBox ID="TextNombre" class = "textbox" runat="server" ></asp:TextBox>
         <br /> <br />
         
-        <asp:Label ID="LabelApellido" runat="server" Text="Apellido: "></asp:Label>
-        <asp:TextBox ID="TextApellido" runat="server" style="margin-left: 14px" Width="224px"></asp:TextBox>
+        <asp:Label ID="LabelApellido" class="textname" runat="server" Text="Apellido: "></asp:Label>
+        <asp:TextBox ID="TextApellido" class = "textbox" runat="server"></asp:TextBox>
         <br /><br />   
         
-        <asp:Label ID="LabelContrase" runat="server" Text="Contraseña : "></asp:Label>
-        <asp:TextBox ID="TextBoxContrase" runat="server" style="margin-left: 14px" Width="200px"></asp:TextBox>
+        <asp:Label ID="LabelContrase" class="textname" runat="server" Text="Contraseña : "></asp:Label>
+        <asp:TextBox ID="TextBoxContrase" class = "textbox" runat="server"></asp:TextBox>
         <br /><br />
     
-        <asp:Label ID="LabelContraseR" runat="server" Text="Repetir Contraseña: "></asp:Label>
-        <asp:TextBox ID="TextContraseR" runat="server" style="margin-left: 14px" Width="160px"></asp:TextBox>
+        <asp:Label ID="LabelContraseR" class="textname" runat="server" Text="Repetir Contraseña: "></asp:Label>
+        <asp:TextBox ID="TextContraseR" class = "textbox" runat="server"></asp:TextBox>
         <br /><br /> 
-   
-        <asp:Label ID="LabelTipo" runat="server" Text="Tipo de Animal: "></asp:Label>
-        <asp:DropDownList ID="TextTipo" runat="server" Height="16px" Width="199px" 
-             BackColor="Silver" >
+         
+        <asp:Label ID="LabelDireccion" class="textname" runat="server" Text="Direccion: "></asp:Label>
+        <asp:TextBox ID="TextDireccion" class = "textbox" runat="server"></asp:TextBox>
+        <br /><br />
+            
+        <asp:Label ID="LabeOrg" class="textname" runat="server" Text="Organización: "></asp:Label>
+        <asp:TextBox ID="TextOrg" class = "textbox" runat="server"></asp:TextBox>
+        <br /><br /> 
+
+        <asp:Label ID="LabelTelefono" class="textname" runat="server" Text="Telefono: "></asp:Label>
+        <asp:TextBox ID="TextTelefono" class = "textbox" runat="server"></asp:TextBox>
+        <br /><br />
+        
+        <asp:Label ID="LabelCorreo" class="textname" runat="server" Text="Correo Electronico: "></asp:Label>
+        <asp:TextBox ID="TextCorreo" class = "textbox" runat="server"></asp:TextBox>
+        <br /><br />  
+
+          <asp:Label ID="LabelTipo" class="textname" runat="server" Text="Tipo de Animal: "></asp:Label>
+        <asp:DropDownList ID="TextTipo" class = "dropdownbox" runat="server">
             <asp:ListItem>..</asp:ListItem>
             <asp:ListItem>Perro</asp:ListItem>
             <asp:ListItem>Gato</asp:ListItem>
             <asp:ListItem>Otro</asp:ListItem>
-        </asp:DropDownList>
-        
-        <!--Para la seleccion de otro debe agregar un campo para escribir-->
-        
-        <br /><br />
-    
-        <asp:Label ID="LabelDireccion" runat="server" Text="Direccion: "></asp:Label>
-        <asp:TextBox ID="TextDireccion" runat="server" style="margin-left: 14px" Width="217px" placeholder="Enter a location"></asp:TextBox>
-        <br /><br />
-            
-        <asp:Label ID="LabeOrg" runat="server" Text="Organización: "></asp:Label>
-        <asp:TextBox ID="TextOrg" runat="server" Width="208px"></asp:TextBox>
-        <br /><br /> 
+        </asp:DropDownList>       
+     </div>
 
-        <asp:Label ID="LabelTelefono" runat="server" Text="Telefono: "></asp:Label>
-        <asp:TextBox ID="TextTelefono" runat="server" Width="237px"></asp:TextBox>
-        <br /><br />
-        
-        <asp:Label ID="LabelCorreo" runat="server" Text="Correo Electronico: "></asp:Label>
-        <asp:TextBox ID="TextCorreo" runat="server" Width="180px"></asp:TextBox>
-        <br /><br /> 
-     
+     <div id="checkbox">
+    <asp:CheckBox ID="CheckBox_Protector" Text="Protector" runat="server" />
+    <asp:CheckBox ID="CheckBox_Adoptador" Text="Adoptador" runat="server" />
+     </div>
 </form>
      
-        <asp:Button ID="BtnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" style="margin-left: 200px" Width="78px"/>
-     
+       <asp:Button ID="BtnAceptar" runat="server" class="button" Text="Aceptar" OnClick="btnAceptar_Click"/>     
        <asp:Label ID="LblEstado" runat="server"></asp:Label>
      
 </div>

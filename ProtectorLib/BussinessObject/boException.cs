@@ -9,13 +9,11 @@ namespace BusinessObject
     /// </summary>
     public class boException : Exception
     {
-        public boException(string mensaje)
-            : base(mensaje)
+        public boException(string mensaje) : base(mensaje)       
         {
         }
 
-        public boException(Exception ex)
-            : base("Se produjo un error en la aplicación.", ex)
+        public boException(Exception ex) : base("Se produjo un error en la aplicación.", ex)
         {
         }
     }

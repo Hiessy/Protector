@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{69C9A27A-57A7-4D42-92CA-019C463DBA50}</ProjectGuid>
+    <ProjectGuid>{D36CD8EE-355F-4BD3-B2F3-F8D196D32CFC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entities</RootNamespace>
-    <AssemblyName>Entities</AssemblyName>
+    <RootNamespace>UtilitiesGooglesApis</RootNamespace>
+    <AssemblyName>UtilitiesGooglesApis</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeocodeEntity.cs" />
-    <Compile Include="ProtectorEntity.cs" />
+    <Compile Include="GoogleConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{69C9A27A-57A7-4D42-92CA-019C463DBA50}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

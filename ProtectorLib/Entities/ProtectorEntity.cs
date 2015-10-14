@@ -8,127 +8,34 @@ namespace Entities
         private string nombre;
         private string apellido;
         private string organizacion;
-        private string contrase;
+        private string clave;
         private string direccion;
         private string telefono;
-        //private string tipo;
+        private string tipo;
+        private double latitud;
+        private double longitud;   
         
-       
-        
-
         public ProtectorEntity()
         {
             correo = "";
             nombre = "";
             apellido = "";
             organizacion = "";
-            contrase = "";
+            clave = "";
             direccion = "";
             telefono = "";
-            //tipo = "";
-           
-           
-        }
-        public string Correo
-        {
-            get
-            {
-                return correo;
-            }
-
-            set
-            {
-                correo = (value.Trim() != "" ? value.Trim() : null);
-            }
+            tipo = "";                      
         }
 
-        public string Nombre
-        {
-            get
-            {
-                return nombre;
-            }
-
-            set
-            {
-                nombre = value;
-            }
-        }
-
-        public string Apellido
-        {
-            get
-            {
-                return apellido;
-            }
-
-            set
-            {
-                apellido = value;
-            }
-        }
-        public string Organizacion
-        {
-            get
-            {
-                return organizacion;
-            }
-
-            set
-            {
-                organizacion = value.Trim();
-            }
-        }
-        public string Contrase
-        {
-            get
-            {
-                return contrase;
-            }
-
-            set
-            {
-                contrase = value;
-            }
-        }
-        public string Direccion
-        {
-            get
-            {
-                return direccion;
-            }
-
-            set
-            {
-                direccion = value;
-            }
-        }
-
-        public string Telefono
-        {
-            get
-            {
-                return telefono;
-            }
-
-            set
-            {
-                telefono = value;
-            }
-        }
-        /*
-        public string Tipo
-        {
-            get
-            {
-                return tipo;
-            }
-
-            set
-            {
-                tipo = value;
-            }
-        }        
-       */ 
+        public string Correo { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Organizacion { get; set; }
+        public string Clave { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono { get; set; }
+        public string Tipo { get; set; }
+        public double Latitud { get; set; }
+        public double Longitud { get; set; }
     }
 }

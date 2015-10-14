@@ -23,19 +23,6 @@
 	</div>
 	<div id="layoutCenterBody"><div class="inner_copy"></div>
 		<div id="layoutNavigation">
-			<div class="navTitle"><h3>Menu</h3></div>
-			<ul>
-				<li><a href="#">BEES</a></li>
-				<li><a href="#">BEE SUPPLIES</a></li>
-				<li><a href="#">BURTS BEE, ETC</a></li>
-				<li><a href="#">SPELLING BEES</a></li>
-				<li><a href="#">BEE NEWSPAPERS</a></li>
-				<li><a href="#">MORE BEE STUFF</a></li>
-				<li><a href="#">BEES</a></li>
-				<li><a href="#">BEE SUPPLIES</a></li>
-			</ul>
-		</div>
-
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>

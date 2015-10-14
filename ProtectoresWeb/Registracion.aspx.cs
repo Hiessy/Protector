@@ -14,18 +14,16 @@ public partial class Registracion : System.Web.UI.Page
     private void CargarDatos()
     {
 
-        ProtectorEntity entidad = (ProtectorEntity)Context.Items["Protector"];
+        ProtectorEntity entidad = (ProtectorEntity)Context.Items["Usuario"];
         TextCorreo.Text = entidad.Correo;
         TextNombre.Text = entidad.Nombre;
         TextApellido.Text = entidad.Apellido;
         TextOrg.Text = entidad.Organizacion;
-        TextBoxContrase.Text = entidad.Contrase;
+        TextBoxContrase.Text = entidad.Clave;
         TextDireccion.Text = entidad.Direccion;
         TextTelefono.Text = entidad.Telefono;
-        //TextTipo.Text = entidad.Tipo;
+        TextTipo.Text = entidad.Tipo;    
         
-        
-
     }
 
     protected void Page_Load(object sender, EventArgs e)
@@ -47,7 +45,7 @@ public partial class Registracion : System.Web.UI.Page
         entidad.Nombre = TextNombre.Text;
         entidad.Apellido = TextApellido.Text;
         entidad.Organizacion = TextOrg.Text;
-        entidad.Contrase = TextBoxContrase.Text;
+        entidad.Clave = TextBoxContrase.Text;
         entidad.Direccion = TextDireccion.Text;
         entidad.Telefono = TextTelefono.Text;
         //entidad.Tipo = TextTipo.Text;
